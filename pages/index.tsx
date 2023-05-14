@@ -160,8 +160,8 @@ export default function Home() {
 
                 {gptResponse.length > 0 && (
                     <div className="flex flex-col p-4 justify-center">
-                        {gptResponse.map((item) => (
-                            <div>
+                        {gptResponse.map((item, index) => (
+                            <div key={index}>
                                 <p>{item}</p>
                             </div>
                         ))}
